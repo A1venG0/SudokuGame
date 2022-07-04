@@ -42,7 +42,7 @@ class ActiveGameLogic(
             else this - 1
         }
 
-    override fun ovEvent(event: ActiveGameEvent) {
+    override fun onEvent(event: ActiveGameEvent) {
         when (event) {
             is ActiveGameEvent.OnInput -> onInput(
                 event.input,

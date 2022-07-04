@@ -4,5 +4,5 @@ import kotlinx.coroutines.Job
 
 abstract class BaseLogic<EVENT> {
     protected lateinit var jobTracker: Job
-    abstract fun ovEvent(event: EVENT)
+    abstract fun onEvent(event: EVENT)
 }
