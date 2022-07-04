@@ -12,7 +12,7 @@ import kotlinx.coroutines.withContext
 
 class LocalSettingsStorageImpl(
     private val dataStore: DataStore<GameSettings>
-): ISettingsStorage {
+) : ISettingsStorage {
     override suspend fun getSettings(): SettingsStorageResult =
         withContext(Dispatchers.IO) {
             try {
@@ -22,6 +22,8 @@ class LocalSettingsStorageImpl(
                 SettingsStorageResult.OnError(e)
             }
         }
+
+
     override suspend fun updateSettings(settings: Settings): SettingsStorageResult =
         withContext(Dispatchers.IO) {
             try {
