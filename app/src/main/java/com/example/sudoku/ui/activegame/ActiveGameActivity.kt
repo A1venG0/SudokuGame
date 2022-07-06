@@ -7,6 +7,7 @@ import androidx.activity.compose.setContent
 import com.example.sudoku.R
 import com.example.sudoku.common.makeToast
 import com.example.sudoku.ui.GraphSudokuTheme
+import com.example.sudoku.ui.activegame.buildlogic.buildActiveGameLogic
 
 class ActiveGameActivity : AppCompatActivity(), ActiveGameContainer {
     private lateinit var logic: ActiveGameLogic

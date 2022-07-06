@@ -1,5 +1,8 @@
 package com.example.sudoku.domain
 
+/**
+ * A class that represents user's best times for solving various sudoku puzzles
+ */
 data class UserStatistics(
     val fourEasy: Long = 0,
     val fourMedium: Long = 0,

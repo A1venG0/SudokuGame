@@ -1,5 +1,8 @@
 package com.example.sudoku.domain
 
+/**
+ * An interface that represents a settings storage
+ */
 interface ISettingsStorage {
     suspend fun getSettings(): SettingsStorageResult
     suspend fun updateSettings(settings: Settings): SettingsStorageResult

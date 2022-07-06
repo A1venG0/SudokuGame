@@ -18,7 +18,7 @@ internal fun buildActiveGameLogic(
         viewModel,
         GameRepositoryImpl(
             LocalGameStorageImpl(context.filesDir.path),
-        LocalSettingsStorageImpl(context.settingsDataStore)
+        LocalSettingsStorageImpl(context.settingDataStore)
         ),
         LocalStatisticsStorageImpl(
             context.statsDataStore,

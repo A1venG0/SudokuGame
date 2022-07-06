@@ -5,6 +5,9 @@ import android.widget.Toast
 import com.example.sudoku.R
 import com.example.sudoku.domain.Difficulty
 
+/**
+ * An extensions for applying open-closed principle
+ */
 internal fun Activity.makeToast(message:String) {
     Toast.makeText(
         this,
