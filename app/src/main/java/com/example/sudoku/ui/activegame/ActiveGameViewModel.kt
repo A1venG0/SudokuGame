@@ -44,9 +44,9 @@ class ActiveGameViewModel {
 
         if (isComplete) {
             isCompleteState = true
-            contentState = ActiveGameContentState.COMPLETE
+            contentState = ActiveGameScreenState.COMPLETE
         } else {
-            contentState = ActiveGameContentState.ACTIVE
+            contentState = ActiveGameScreenState.ACTIVE
         }
 
         boundary = puzzle.boundary
@@ -78,8 +78,7 @@ class ActiveGameViewModel {
 
     internal fun updateFocusState(x: Int, y: Int) {
         boardState.values.forEach {
-            if (it.x == x && it.y == y) it.hasFocus = true
-            else it.hasFocus = false
+            it.hasFocus = it.x == x && it.y == y // might be wrong
         }
 
         subBoardState?.invoke(boardState)

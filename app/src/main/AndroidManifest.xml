@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sudoku">
         <activity
+            android:name=".ui.newgame.NewGameActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activegame.ActiveGameActivity"
             android:exported="true">
             <intent-filter>

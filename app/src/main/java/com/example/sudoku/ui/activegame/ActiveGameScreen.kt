@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import com.example.sudoku.R
+import com.example.sudoku.common.sqrt
 import com.example.sudoku.common.toTime
 import com.example.sudoku.ui.*
 import com.example.sudoku.ui.components.AppToolbar
