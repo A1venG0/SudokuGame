@@ -35,9 +35,11 @@ internal fun buildNodes(n: Int, difficulty: Difficulty): SudokuPuzzle {
 }
 
 internal fun SudokuPuzzle.buildEdges(): SudokuPuzzle {
-    TODO("not yet implemented")
+    // not yet implemented
+    return SudokuPuzzle(9, Difficulty.MEDIUM, LinkedHashMap<Int, LinkedList<SudokuNode>>())
 }
 
 internal fun SudokuPuzzle.seedColors(): SudokuPuzzle {
-    TODO("not yet implemented")
+    // not yet implemented
+    return SudokuPuzzle(9, Difficulty.MEDIUM, LinkedHashMap<Int, LinkedList<SudokuNode>>())
 }
