@@ -4,6 +4,7 @@ import android.app.Activity
 import android.widget.Toast
 import com.example.sudoku.R
 import com.example.sudoku.domain.Difficulty
+import kotlin.math.sqrt
 
 /**
  * An extensions for applying open-closed principle
@@ -33,3 +34,6 @@ internal val Difficulty.toLocalizedResource: Int
             Difficulty.HARD -> R.string.hard
         }
     }
+
+internal val Int.sqrt: Int
+    get() = sqrt(this.toDouble()).toInt()

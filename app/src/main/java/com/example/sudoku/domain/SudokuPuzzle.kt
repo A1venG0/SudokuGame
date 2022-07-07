@@ -1,5 +1,6 @@
 package com.example.sudoku.domain
 
+import com.example.sudoku.computationlogic.buildNewSudoku
 import java.io.Serializable
 import java.util.*
 import kotlin.collections.LinkedHashMap

@@ -6,7 +6,7 @@ import com.example.sudoku.domain.getHash
 import org.junit.Test
 
 class SudokuAlgorithmTests {
-    @Test
+    /*@Test
     fun unsolverTest() {
         val list = mutableListOf<SudokuPuzzle>()
         buildNewSudoku(9, Difficulty.MEDIUM)
@@ -26,5 +26,16 @@ class SudokuAlgorithmTests {
         puzzle.graph[getHash(3, 3)]!!.first.color = 4
 
         println(puzzle.print())
+    }*/
+
+    @Test
+    fun checkSudokuSize() {
+        val fourGraph = SudokuPuzzle(4, Difficulty.MEDIUM)
+        val nineGraph = SudokuPuzzle(9, Difficulty.MEDIUM)
+        val sixteenGraph = SudokuPuzzle(16, Difficulty.MEDIUM)
+
+        assert(fourGraph.graph.size == 16)
+        assert(nineGraph.graph.size == 81)
+        assert(sixteenGraph.graph.size == 256)
     }
 }

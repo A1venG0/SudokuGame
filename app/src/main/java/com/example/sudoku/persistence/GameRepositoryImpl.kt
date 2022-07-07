@@ -1,5 +1,6 @@
 package com.example.sudoku.persistence
 
+import com.example.sudoku.computationlogic.puzzleIsComplete
 import com.example.sudoku.domain.*
 
 class GameRepositoryImpl(
